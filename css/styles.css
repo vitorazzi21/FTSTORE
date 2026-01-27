@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    width: 100%;
+    color: #121212;
+    background-color: #FFFFFF;
+}
+.section_header{
+    padding: 2%;
+    background-color: #002776;
+    color: #FFFFFF;
+
+}
+.footer_principal{
+    background-color: #002776;
+    padding-top: 85px;
+    color: #FFFFFF;
+}
+.logoloja{
+    max-height: 150px;
+    width: 150px;
+}
+.bannerloja{
+    height: 400px;
+    width: 550px;
+}
+.logolojafooter{
+    max-width: 150px;
+    height: 150px;
+}
+.instagramlogo{
+    width: 38px;
+    height: 38px;
+}
