@@ -10,6 +10,15 @@ body{
     color: #FFFFFF;
 
 }
+nav{
+    padding: 2%;
+    
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
 .footer_principal{
     background-color: #002776;
     padding-top: 85px;
