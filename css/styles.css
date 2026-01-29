@@ -1,9 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Montserrat:wght@400;600;700&family=Inter:wght@400;500;600&family=Roboto:wght@400;500;700&display=swap');
+
+/*Fontes da Página*/
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+a{
+    font-family:'Poppins', sans-serif;
+    font-weight: 600;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
 body{
     margin: 0;
     width: 100%;
     color: #121212;
     background-color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
 }
+main{
+    margin: auto;
+    padding: 2%;
+}
+.scroll_container{
+    padding-left: 2150px;
+    position: fixed;
+}
+.scroll-top{
+    background-color:#121212;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    border-radius: 5px;
+}
+
+
 .section_header{
     padding: 2%;
     background-color: #002776;
@@ -13,8 +49,21 @@ body{
     text-align: center;
     display: flex;
     flex-direction: row;
-    justify-content: centergit;
+    justify-content: center;
 }
+
+.banner_container{
+    display: flex;
+    max-width: 100%;
+    padding: 2%;
+}
+
+
+
+
+
+
+
 .section_ul{
     display: flex;
     padding: 2%;
@@ -23,11 +72,9 @@ body{
     list-style: none;
 }
 .section_li{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
     text-decoration: none;
     color:#FFFFFF;
-    
 }
 .footer_principal{
     background-color: #002776;
@@ -35,16 +82,15 @@ body{
     color: #FFFFFF;
     display: flex;
     flex-direction: row;
-    gap: 100px;
 }
 .footer_container{
     box-sizing: border-box;
-    margin-left: auto;
     margin-right: auto;
-    padding-left: 10px;
+    padding-left: 80px;
     padding-right: 10px;
     display: flex;
     flex-direction: row;
+    gap: 100px;
 }
 .footer_container_2{
     display: flex;
@@ -67,13 +113,36 @@ body{
 .footer_description{
     font-size: 20px;
 }
+.footer_categorias h2 {
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.footer_ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer_li {
+  text-align: left;
+  margin: 6px 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.social_media{
+    margin-top: 40px;
+}
+
+
+
 .logoloja{
     max-height: 150px;
     width: 150px;
 }
 .bannerloja{
-    height: 400px;
-    width: 550px;
+    height: 750px;
+    width: 2000px;
 }
 .logolojafooter{
     max-width: 150px;
