@@ -8,21 +8,64 @@ body{
     padding: 2%;
     background-color: #002776;
     color: #FFFFFF;
-
 }
-nav{
-    padding: 2%;
-    
-}
-ul{
+.navbar_header{
+    text-align: center;
     display: flex;
     flex-direction: row;
+    justify-content: centergit;
+}
+.section_ul{
+    display: flex;
+    padding: 2%;
+    flex-direction: row;
     gap: 20px;
+    list-style: none;
+}
+.section_li{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color:#FFFFFF;
+    
 }
 .footer_principal{
     background-color: #002776;
-    padding-top: 85px;
+    padding: 2%;
     color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+.footer_container{
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.footer_container_2{
+    display: flex;
+    flex-direction: row;
+    gap:90px;
+}
+.footer_secundario{
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+}
+.footer_logo{
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 300px;
+    font-size: 1rem;
+}
+.footer_description{
+    font-size: 20px;
 }
 .logoloja{
     max-height: 150px;
