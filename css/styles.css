@@ -131,10 +131,27 @@ main{
 }
 
 .social_media{
+    display: flex;
+    padding-left: 3px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
     margin-top: 40px;
+    width: auto;
+    font-size: 0;
+    width: 60px;
+    height: 60px;
+    flex-direction: row;
+    gap: 10px;
 }
-
-
+.instagramlogo{
+    width: 40px;
+    height: 40px;
+}
+.Whatsapplogo{
+    width: 40px;
+    height: 40px;
+}
 
 .logoloja{
     max-height: 150px;
