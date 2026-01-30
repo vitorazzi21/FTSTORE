@@ -4,6 +4,7 @@
 h1, h2, h3 {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
+  color: #121212;
 }
 a{
     font-family:'Poppins', sans-serif;
@@ -57,8 +58,58 @@ main{
     max-width: 100%;
     padding: 2%;
 }
-
-
+.card_title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.tittle_card{
+    text-align: center;
+    font-size: 40px;
+}
+.a_card{
+    color: #121212;
+    font-size: 20px;
+}
+.a_card:hover{
+    text-decoration: underline;
+}
+.cards_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.card_logos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    width: 200px;
+    height: 240px;
+    border: 1px solid #374151;
+}
+.size_logos{
+    height: 150px;
+    width: 160px;
+}
+.size_ligue1{
+    height: 300px;
+    width: 300px;
+}
+.size_brasileirao{
+    height: 300px;
+    width: 360px;
+}
+.size_mls{
+    width: 300px;
+    height: 150px;
+}
+.size_premierleague{
+    width: 250px;
+    height: 200px;
+}
 
 
 
@@ -116,6 +167,7 @@ main{
 .footer_categorias h2 {
   text-align: center;
   margin-bottom: 12px;
+  color: #FFFFFF;
 }
 
 .footer_ul {
@@ -128,6 +180,9 @@ main{
   text-align: left;
   margin: 6px 0;
   font-family: 'Poppins', sans-serif;
+}
+.footer_page h2{
+    color: #FFFFFF;
 }
 
 .social_media{
