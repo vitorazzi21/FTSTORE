@@ -135,6 +135,7 @@ main{
 .cards_camisas{
     display: flex;
     flex-direction: row;
+    gap: 70px;
 }
 .camisas_cards{
     width: 300px;
@@ -143,12 +144,15 @@ main{
 }
 .preco_container{
     display: flex;
-    flex-direction: column;
+    flex-direction:row;
+    gap: 75px;
 }
 .nome_camisas{
     display: flex;
     flex-direction: column;
     gap: 5px;
+    width: 300px;
+    height: 200px;
 }
 .nome_camisas h3 {
   font-size: 20px;
