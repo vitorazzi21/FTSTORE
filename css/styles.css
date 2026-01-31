@@ -262,3 +262,28 @@ main{
     width: 38px;
     height: 38px;
 }
+.card_camisa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.nome_camisa {
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.btn-instagram {
+  padding: 8px 14px;
+  background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.btn-instagram:hover {
+  opacity: 0.85;
+}
