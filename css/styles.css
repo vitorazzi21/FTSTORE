@@ -165,9 +165,9 @@ main{
   margin: 0;
 }
 
-.footer_principal{
+.footer_principal {
     background-color: #002776;
-    padding: 2%;
+    padding: 60px 80px;
     color: #FFFFFF;
     display: flex;
     flex-direction: row;
