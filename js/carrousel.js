@@ -4,7 +4,7 @@
 
 
 document.querySelectorAll('.carousel-wrapper').forEach(wrapper => {
-  const track = wrapper.querySelector('.cards_camisas');
+  const track = wrapper.querySelector('.cards_camisas','.nome_camisas');
   const rightBtn = wrapper.previousElementSibling.querySelector('.arrow.right');
   const leftBtn  = wrapper.previousElementSibling.querySelector('.arrow.left');
 

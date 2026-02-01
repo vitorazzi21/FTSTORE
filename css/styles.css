@@ -137,8 +137,11 @@ main{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 10px;
+    margin-top: 90px;
     margin-right:30px;
+}
+.conteudo_inicio h1 {
+  margin-bottom: 20px;
 }
 .carrousel-buttons{
     display: flex;
@@ -162,10 +165,12 @@ main{
     gap: 70px;
     transition: transform 0.4s ease; /*conteudo interno se move*/
     will-change: transform;
+    width: 150px;
 }
 .carousel-wrapper {
     overflow: hidden; /*container se esconde*/
     width: 100%;
+    padding-bottom: 20px;
 }
 
 .camisas_cards{
@@ -307,13 +312,14 @@ main{
 }
 
 .btn-instagram {
-  padding: 8px 14px;
+  padding: 16px 22px;
   background-color: #0057B8;
   color: white;
   text-decoration: none;
   border-radius: 6px;
-  font-size: 14px;
+  font-size: 15px;
   transition: 0.3s;
+  
 }
 
 .btn-instagram:hover {
