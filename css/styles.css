@@ -363,3 +363,11 @@ main{
     margin: 0;
     color: #121212;
 }
+html {
+  scroll-behavior: smooth;
+}
+.liga-link {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
