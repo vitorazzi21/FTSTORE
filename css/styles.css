@@ -48,8 +48,6 @@ main{
     display: flex;
     border-radius: 5px;
 }
-
-
 .section_header{
     padding: 2%;
     background-color: #002776;
@@ -75,7 +73,7 @@ main{
     color:#FFFFFF;
 }
 .banner_container {
-  width: 2376px;        /* largura total da tela */
+  width: 1950px;        /* largura total da tela */
   margin: 0;
   padding: 0;
   margin-left: calc(-50vw + 50%);
