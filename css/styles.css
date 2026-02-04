@@ -240,12 +240,12 @@ main{
 }
 .footer_container{
     box-sizing: border-box;
-    margin-right: auto;
-    padding-left: 80px;
+    padding-left: 550px;
     padding-right: 10px;
     display: flex;
     flex-direction: row;
     gap: 100px;
+
 }
 .footer_container_2{
     display: flex;
@@ -253,9 +253,11 @@ main{
     gap:90px;
 }
 .footer_secundario{
+    margin-top: 10px;
     display: flex;
-    flex-direction: column;
-    max-width: 300px;
+    flex-direction: row;
+    max-width: 600px;
+    gap: 10px; 
 }
 .footer_logo{
     padding-bottom: 20px;
@@ -437,4 +439,61 @@ ul{
     
     
     
+}
+
+
+.zoom-img {
+  cursor: zoom-in;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-img {
+  max-width: 90%;
+  max-height: 90%;
+  cursor: grab;
+  transition: transform 0.15s ease;
+}
+
+.modal-img:active {
+  cursor: grabbing;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+.zoom-controls {
+  position: absolute;
+  bottom: 30px;
+  display: flex;
+  gap: 15px;
+}
+
+.zoom-controls button {
+  width: 45px;
+  height: 45px;
+  font-size: 24px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background: white;
+  font-weight: bold;
+}
+
+.zoom-controls button:hover {
+  background: #ddd;
 }
