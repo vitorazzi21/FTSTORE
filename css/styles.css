@@ -383,7 +383,8 @@ html {
 
 .a_politica{
     font-size: 16px;
-    font-family: 'Poppins', sans-serif;  
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;  
 }
 .a_politica:hover{
     text-decoration: underline;
@@ -497,3 +498,126 @@ ul{
 .zoom-controls button:hover {
   background: #ddd;
 }
+
+
+
+
+@media (max-width:768px){  /*Tablet*/
+    
+}
+@media (max-width:375px){  /*Celular*/
+    .logoloja{
+         width: 90px;
+        height: 100px;
+        margin: 10px 0 0 0;
+    }
+    .banner_container{
+        width: 375px;
+    
+    }
+    .banner_container img{
+        width: 375px;
+    }
+    .tittle_card{
+        font-size: 15px;
+    }
+    .cards_container{
+        gap: 5px;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .card_logos{
+        width: 80px;
+        height: 80px;
+    }
+    .size_logos{
+        height: 50px;
+        width: 50px;
+    }
+    .size_brasileirao{
+        height: 70px;
+        width: 90px;
+    }
+    .size_ligue1{
+        height: 70px;
+        width: 70px;
+    }
+    .size_premierleague{
+        height: 50px;
+        width: 60px;
+    }
+    h1{
+        font-size: 16px;
+    }
+    .arrow{
+        width: 30px;
+        height: 30px;
+    }
+    .conteudo_inicio{
+        margin-top: 40px;
+        align-items: center;
+    }
+    .carrousel-buttons{
+        margin-bottom: 20px;
+       
+    }
+    .cards_camisas{
+        flex-direction: column;
+    }
+    .camisas_cards{
+        width: 180px;
+    }
+    .card_camisas{
+        margin-left: 60px;
+    }
+    .card_camisas h2{
+        font-size: 14px;
+        text-align: justify;
+    }
+    .btn-instagram{
+        font-size: 10px;
+        margin-left: 0;
+        padding: 10px 10px;
+    }
+    .footer_principal{
+        flex-direction: column;
+    }
+    .footer_container{
+        padding: 0;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .footer_secundario{
+        flex-direction: column;
+    }
+    .footer_logo{
+        align-items: center;
+    }
+    p{
+        font-size: 10px;
+        line-height: 20px;
+    }
+    .footer_container_2{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .footer_categorias h2{
+        font-size: 18px;
+    }
+    .footer_li{
+        font-size: 10px;
+    }
+    .footer_page h2{
+        font-size: 16px;
+        text-align:  center;
+    }
+    .a_politica{
+        font-size: 10px;
+    }
+    .social_media{
+        margin-left: 70px;
+        gap: 5px;
+    }
+}
+       
