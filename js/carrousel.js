@@ -4,7 +4,9 @@
 
 
 document.querySelectorAll('.carousel-wrapper').forEach(wrapper => {
-  const track = wrapper.querySelector('.cards_camisas','.nome_camisas, .btn-instagram');
+  const track = wrapper.querySelector('.cards_camisas');
+  const nomeCamisas = wrapper.querySelector('.nome_camisas');
+  const btnInstagram = wrapper.querySelector('.btn-instagram');
   const rightBtn = wrapper.previousElementSibling.querySelector('.arrow.right');
   const leftBtn  = wrapper.previousElementSibling.querySelector('.arrow.left');
 
@@ -94,4 +96,17 @@ modal.addEventListener("click", (e) => {
   if (e.target === modal) {
     modal.style.display = "none";
   }
+});
+
+//375px Celular//
+const mobile375 = window.matchMedia('(max-width: 375px)');
+
+rightBtn.addEventListener('click', () => {
+  if (mobile375.matches) return; // ❌ ignora no mobile
+  // lógica desktop
+});
+
+leftBtn.addEventListener('click', () => {
+  if (mobile375.matches) return;
+  // lógica desktop
 });

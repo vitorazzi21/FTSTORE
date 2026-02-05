@@ -521,42 +521,13 @@ ul{
     .tittle_card{
         font-size: 15px;
     }
-    .cards_container{
-        gap: 5px;
-        flex-direction: column;
-        align-items: center;
-        
+    .carousel-wrapper{
+        overflow-x: auto;
+        overflow-y: hidden;    /*Permite arrastar*/
+        -webkit-overflow-scrolling: touch;
     }
-    .card_logos{
-        width: 80px;
-        height: 80px;
-    }
-    .size_logos{
-        height: 50px;
-        width: 50px;
-    }
-    .size_brasileirao{
-        height: 70px;
-        width: 90px;
-    }
-    .size_ligue1{
-        height: 70px;
-        width: 70px;
-    }
-    .size_premierleague{
-        height: 50px;
-        width: 60px;
-    }
-    h1{
-        font-size: 16px;
-    }
-    .arrow{
-        width: 30px;
-        height: 30px;
-    }
-    .conteudo_inicio{
-        margin-top: 40px;
-        align-items: center;
+    .carousel-wrapper::-webkit-scrollbar {
+        display: none;
     }
     .carrousel-buttons{
         margin-bottom: 20px;
@@ -567,11 +538,14 @@ ul{
         margin-left: 20px;
     }
     .cards_camisas{
+        transform: none;
+        scroll-snap-type: x mandatory;
         gap: 5px;
         justify-content: center;
     }
     .card_camisas{
-        margin-left: 30px;
+        flex: 0 0 100%;
+        scroll-snap-align: center;
         
     }
     .card_camisas h2{
@@ -582,6 +556,43 @@ ul{
         margin-left: 5px;
 
     }
+    .cards_container{
+        gap: 5px;
+        flex-direction: row;
+        align-items: center;
+        
+    }
+    .card_logos{
+        width: 50px;
+        height: 50px;
+    }
+    .size_logos{
+        height: 30px;
+        width: 30px;
+    }
+    .size_brasileirao{
+        height:50px;
+        width: 60px;
+    }
+    .size_ligue1{
+        height: 50px;
+        width: 50px;
+    }
+    .size_premierleague{
+        height: 30px;
+        width: 50px;
+    }
+    h1{
+        font-size: 16px;
+    }
+    .arrow{
+        display: none;
+    }
+    .conteudo_inicio{
+        margin-top: 40px;
+        align-items: center;
+    }
+    
     .btn-instagram{
         font-size:9px;
         margin-left: 0;
