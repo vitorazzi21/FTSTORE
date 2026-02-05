@@ -562,31 +562,40 @@ ul{
         margin-bottom: 20px;
        
     }
-    .cards_camisas{
-        flex-direction: column;
-    }
     .camisas_cards{
-        width: 180px;
+        width: 110px;
+        margin-left: 20px;
+    }
+    .cards_camisas{
+        gap: 5px;
+        justify-content: center;
     }
     .card_camisas{
-        margin-left: 60px;
+        margin-left: 30px;
+        
     }
     .card_camisas h2{
-        font-size: 14px;
-        text-align: justify;
+        font-size: 12px;
+        text-align: center;
+        width: 150px;
+        line-height: 15px;
+        margin-left: 5px;
+
     }
     .btn-instagram{
-        font-size: 10px;
+        font-size:9px;
         margin-left: 0;
-        padding: 10px 10px;
+        padding: 8px 8px;
     }
     .footer_principal{
         flex-direction: column;
+        padding-left: 30px;
     }
     .footer_container{
         padding: 0;
         flex-direction: column;
         gap: 20px;
+        
     }
     .footer_secundario{
         flex-direction: column;
@@ -601,6 +610,7 @@ ul{
     .footer_container_2{
         flex-direction: column;
         gap: 20px;
+
     }
     .footer_categorias h2{
         font-size: 18px;
@@ -616,7 +626,7 @@ ul{
         font-size: 10px;
     }
     .social_media{
-        margin-left: 70px;
+        margin-left: 100px;
         gap: 5px;
     }
 }
