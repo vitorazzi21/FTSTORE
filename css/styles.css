@@ -73,10 +73,9 @@ main{
     color:#FFFFFF;
 }
 .banner_container {
-  width: 1912px;        /* largura total da tela */
+  width: 100%;
   margin: 0;
   padding: 0;
-  margin-left: calc(-50vw + 50%);
 }
 
 .banner_container img {
@@ -318,10 +317,6 @@ main{
 .logoloja{
     max-height: 150px;
     width: 150px;
-}
-.bannerloja{
-    height: 700px;
-    width: 100%;
 }
 .logolojafooter{
     max-width: 150px;
