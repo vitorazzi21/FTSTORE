@@ -237,10 +237,10 @@ main{
     color: #FFFFFF;
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 .footer_container{
     box-sizing: border-box;
-    padding-left: 550px;
     padding-right: 10px;
     display: flex;
     flex-direction: row;
@@ -257,11 +257,12 @@ main{
     display: flex;
     flex-direction: row;
     max-width: 600px;
-    gap: 10px; 
+    gap: 20px; 
 }
 .footer_logo{
     padding-bottom: 20px;
     display: flex;
+    margin-top: 30px;
     flex-direction: column;
     gap: 10px;
     max-width: 300px;
@@ -320,7 +321,7 @@ main{
 }
 .bannerloja{
     height: 700px;
-    width: 2200px;
+    width: 100%;
 }
 .logolojafooter{
     max-width: 150px;
@@ -502,7 +503,10 @@ ul{
 
 
 
-@media (max-width:768px){  /*Tablet*/
+@media (max-width:1900px){  
+    .bannerloja{
+        width: 100%;
+    }
     
 }
 @media (max-width:375px){  /*Celular*/
@@ -520,14 +524,6 @@ ul{
     }
     .tittle_card{
         font-size: 15px;
-    }
-    .carousel-wrapper{
-        overflow-x: auto;
-        overflow-y: hidden;    /*Permite arrastar*/
-        -webkit-overflow-scrolling: touch;
-    }
-    .carousel-wrapper::-webkit-scrollbar {
-        display: none;
     }
     .carrousel-buttons{
         margin-bottom: 20px;
@@ -585,9 +581,6 @@ ul{
     h1{
         font-size: 16px;
     }
-    .arrow{
-        display: none;
-    }
     .conteudo_inicio{
         margin-top: 40px;
         align-items: center;
@@ -611,8 +604,13 @@ ul{
     .footer_secundario{
         flex-direction: column;
     }
+    .footer_description{
+        margin-left: 35px;
+        text-align: center;
+    }
     .footer_logo{
         align-items: center;
+        margin-left: 30px;
     }
     p{
         font-size: 10px;
