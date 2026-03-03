@@ -1,0 +1,166 @@
+@media screen and (min-width: 1900px) {
+  .bannerloja {
+    width: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  /* Celular */
+
+  .logoloja {
+    width: 90px;
+    height: 100px;
+    margin: 10px 0 0 0;
+  }
+
+  .banner_container,
+  .banner_container img {
+    width: 375px;
+  }
+
+  .tittle_card {
+    font-size: 15px;
+  }
+
+  .carrousel-buttons {
+    margin-bottom: 20px;
+  }
+
+  .camisas_cards {
+    width: 110px;
+    margin-left: 20px;
+  }
+
+  .cards_camisas {
+    transform: none;
+    scroll-snap-type: x mandatory;
+    gap: 5px;
+    justify-content: center;
+  }
+
+  .card_camisas {
+    flex: 0 0 100%;
+    scroll-snap-align: center;
+  }
+
+  .card_camisas h2 {
+    font-size: 12px;
+    text-align: center;
+    width: 150px;
+    line-height: 15px;
+    margin-left: 5px;
+    font-family: var(--font-heading);
+  }
+
+  .cards_container {
+    gap: 5px;
+    margin-left: 20px;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .card_logos {
+    width: 50px;
+    height: 50px;
+  }
+
+  .size_logos {
+    height: 30px;
+    width: 30px;
+  }
+
+  .size_brasileirao {
+    height: 50px;
+    width: 60px;
+  }
+
+  .size_ligue1 {
+    height: 50px;
+    width: 50px;
+  }
+
+  .size_premierleague {
+    height: 30px;
+    width: 50px;
+  }
+
+  h1 {
+    font-size: 16px;
+    margin-left: 10px;
+    font-family: var(--font-heading);
+  }
+
+  .conteudo_inicio {
+    margin-top: 40px;
+    align-items: center;
+  }
+
+  .btn-instagram {
+    font-size: 9px;
+    margin-left: 0;
+    padding: 8px 8px;
+    font-family: var(--font-heading);
+  }
+
+  .footer_principal {
+    flex-direction: column;
+    padding-left: 30px;
+  }
+
+  .footer_container {
+    padding: 0;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer_secundario {
+    flex-direction: column;
+  }
+
+  .footer_description {
+    margin-left: 35px;
+    text-align: center;
+    font-family: var(--font-body);
+  }
+
+  .footer_logo {
+    align-items: center;
+    margin-left: 30px;
+  }
+
+  p {
+    font-size: 10px;
+    line-height: 20px;
+    font-family: var(--font-body);
+  }
+
+  .footer_container_2 {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer_categorias h2 {
+    font-size: 18px;
+    font-family: var(--font-heading);
+  }
+
+  .footer_li {
+    font-size: 10px;
+    font-family: var(--font-heading);
+  }
+
+  .footer_page h2 {
+    font-size: 16px;
+    text-align: center;
+    font-family: var(--font-heading);
+  }
+
+  .a_politica {
+    font-size: 10px;
+  }
+
+  .social_media {
+    margin-left: 100px;
+    gap: 5px;
+  }
+}

@@ -1,0 +1,363 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Montserrat:wght@400;600;700&family=Inter:wght@400;500;600&family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  /* =========================
+     🎨 CORES UTILIZADAS
+  ========================== */
+
+  --color-primary: #002776; /* Header / Footer */
+  --color-dark: #121212; /* Texto principal */
+  --color-white: #ffffff; /* Fundo branco */
+  --color-border: #ced0d2; /* Bordas dos cards */
+  --color-hover: #e5e7eb; /* Hover card */
+  --color-arrow-bg: #f3f4f6; /* Fundo botão seta */
+  --color-arrow-border: #374151; /* Borda botão seta */
+  --color-secondary-text: #594d4d; /* Texto secundário */
+  --color-shirt-border: #6f7d9a; /* Borda das camisas */
+
+  /* =========================
+     🔤 FONTES
+  ========================== */
+
+  --font-heading: "Poppins", sans-serif;
+  --font-body: "Inter", sans-serif;
+}
+
+/*Fontes da Página*/
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  color: var(--color-dark);
+}
+
+a {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  color: var(--color-white);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  color: var(--color-dark);
+  background-color: var(--color-white);
+  font-family: var(--font-body);
+  font-weight: 400;
+}
+
+main {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+p,
+a {
+  font-size: 20px;
+  line-height: 30px;
+  font-family: var(--font-heading);
+}
+
+ul {
+  margin-left: 30px;
+}
+
+.scroll_container {
+  padding-left: 1600px;
+  position: fixed;
+}
+
+.scroll-top {
+  background-color: var(--color-dark);
+  height: 60px;
+  width: 60px;
+  display: flex;
+  border-radius: 5px;
+}
+
+.section_header {
+  padding: 2%;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.navbar_header {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.section_ul {
+  display: flex;
+  padding: 2%;
+  flex-direction: row;
+  gap: 20px;
+  list-style: none;
+}
+
+.section_li {
+  font-size: 20px;
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+.banner_container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.banner_container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card_title {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.tittle_card {
+  text-align: center;
+  font-size: 40px;
+}
+
+.a_card {
+  color: var(--color-dark);
+  font-size: 20px;
+}
+
+.a_card:hover {
+  text-decoration: underline;
+}
+
+.cards_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  cursor: pointer;
+}
+
+.card_logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-white);
+  width: 200px;
+  height: 240px;
+  border: 1px solid var(--color-border);
+  border-radius: 5px;
+}
+
+.card_logos:hover {
+  background-color: var(--color-hover);
+}
+
+.size_logos {
+  height: 150px;
+  width: 160px;
+}
+
+.size_ligue1 {
+  height: 300px;
+  width: 300px;
+}
+
+.size_brasileirao {
+  height: 300px;
+  width: 360px;
+}
+
+.size_mls {
+  width: 300px;
+  height: 150px;
+}
+
+.size_premierleague {
+  width: 250px;
+  height: 200px;
+}
+
+.conteudo_inicio {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 90px;
+  margin-right: 30px;
+}
+
+.conteudo_inicio h1 {
+  margin-bottom: 20px;
+}
+
+.carrousel-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.arrow {
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--color-arrow-border);
+  background: var(--color-arrow-bg);
+  font-size: 22px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.arrow:hover {
+  background-color: var(--color-hover);
+}
+
+.cards_camisas {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  transition: transform 0.4s ease;
+  will-change: transform;
+  width: max-content;
+}
+
+.card_camisas h2 {
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 3;
+  margin: 8px 0 4px;
+}
+
+.carousel-wrapper {
+  overflow-x: hidden;
+  overflow-y: visible;
+  width: 100%;
+  padding-bottom: 60px;
+  position: relative;
+}
+
+.camisas_cards {
+  width: 300px;
+  height: auto;
+  max-height: 500px;
+  object-fit: contain;
+  display: block;
+  border: 4px solid var(--color-shirt-border);
+  margin-bottom: 6px;
+}
+
+.preco_container {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+}
+
+.nome_camisas {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 300px;
+  height: 260px;
+  transition: transform 0.4s ease;
+}
+
+.nome_camisas h3 {
+  font-size: 20px;
+  color: var(--color-secondary-text);
+  margin: 0;
+}
+
+.nome_camisas h2 {
+  font-size: 22px;
+  margin: 0;
+}
+
+.footer_principal {
+  background-color: var(--color-primary);
+  padding: 60px 80px;
+  color: var(--color-white);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.footer_container {
+  box-sizing: border-box;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+
+.footer_container_2 {
+  display: flex;
+  flex-direction: row;
+  gap: 90px;
+}
+
+.footer_secundario {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  max-width: 600px;
+  gap: 20px;
+}
+
+.footer_logo {
+  padding-bottom: 20px;
+  display: flex;
+  margin-top: 30px;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 300px;
+  font-size: 1rem;
+}
+
+.footer_description {
+  font-size: 20px;
+}
+
+.footer_categorias h2 {
+  text-align: center;
+  margin-bottom: 12px;
+  color: var(--color-white);
+}
+
+.footer_ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer_li {
+  text-align: left;
+  margin: 6px 0;
+  font-family: var(--font-heading);
+}
+
+.footer_page h2 {
+  color: var(--color-white);
+}
