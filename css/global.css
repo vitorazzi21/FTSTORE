@@ -296,9 +296,11 @@ ul {
 }
 
 .footer_principal {
-  background-color: var(--color-primary);
+  background-repeat: no-repeat;
+  background: url(../assets/footerloja.jpeg);
   padding: 60px 80px;
-  color: var(--color-white);
+  color: var(--color-dark);
+  font-weight: 600;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -326,25 +328,75 @@ ul {
   gap: 20px;
 }
 
-.footer_logo {
-  padding-bottom: 20px;
-  display: flex;
-  margin-top: 30px;
-  flex-direction: column;
-  gap: 10px;
-  max-width: 300px;
-  font-size: 1rem;
+/* ================= FOOTER PRINCIPAL ================= */
+
+.footer_principal {
+  position: relative;
+  background: url(../assets/footerloja.jpeg) center/cover no-repeat;
+  padding: 80px 8%;
+  color: var(--color-white);
+  font-family: var(--font-body);
 }
+
+/* Overlay escuro para melhorar leitura */
+.footer_principal::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+/* Garante que conteúdo fique acima do overlay */
+.footer_container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  gap: 70px;
+}
+
+/* ================= ESTRUTURA ================= */
+
+.footer_container_2 {
+  display: flex;
+  gap: 60px;
+}
+
+.footer_secundario {
+  display: flex;
+  max-width: 600px;
+  gap: 25px;
+}
+
+.footer_logo {
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+}
+
+.logolojafooter {
+  width: 140px;
+}
+
+/* ================= DESCRIÇÃO ================= */
 
 .footer_description {
-  font-size: 20px;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #d0d0d0;
 }
 
-.footer_categorias h2 {
-  text-align: center;
-  margin-bottom: 12px;
-  color: var(--color-white);
+/* ================= TÍTULOS ================= */
+
+.footer_categorias h2,
+.footer_page h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #ffffff;
 }
+
+/* ================= LISTA ================= */
 
 .footer_ul {
   list-style: none;
@@ -353,11 +405,46 @@ ul {
 }
 
 .footer_li {
-  text-align: left;
-  margin: 6px 0;
-  font-family: var(--font-heading);
+  margin: 8px 0;
+  font-size: 14px;
+  color: #cfcfcf;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 
-.footer_page h2 {
-  color: var(--color-white);
+.footer_li:hover {
+  color: #00c853;
+  transform: translateX(5px);
+}
+
+/* ================= LINKS ================= */
+
+.a_politica {
+  text-decoration: none;
+  color: #cfcfcf;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.a_politica:hover {
+  color: #00c853;
+}
+
+/* ================= SOCIAL MEDIA ================= */
+
+.social_media {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.instagramlogo,
+.Whatsapplogo {
+  width: 28px;
+  transition: 0.3s ease;
+}
+
+.instagramlogo:hover,
+.Whatsapplogo:hover {
+  transform: scale(1.1);
 }
