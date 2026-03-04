@@ -262,7 +262,7 @@ ul {
 .camisas_cards {
   width: 100%;
   height: 280px;
-  object-fit: cover; /* preenche o espaço */
+  object-fit: contain; /* Corrigido para não cortar */
 }
 .preco_container {
   display: flex;

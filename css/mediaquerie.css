@@ -11,12 +11,16 @@
 @media (max-width: 375px) {
   /* ================= GERAL ================= */
 
+  * {
+    box-sizing: border-box;
+  }
+
   body {
     overflow-x: hidden;
   }
 
   main {
-    padding: 0 15px;
+    padding: 0 12px;
   }
 
   h1 {
@@ -25,15 +29,16 @@
   }
 
   .tittle_card {
-    font-size: 16px;
+    font-size: 15px;
     text-align: center;
   }
 
   /* ================= HEADER ================= */
 
   .logoloja {
-    width: 90px;
-    margin: 10px 0;
+    width: 85px;
+    margin: 10px auto;
+    display: block;
   }
 
   /* ================= BANNER ================= */
@@ -41,21 +46,21 @@
   .bannerloja {
     width: 100%;
     height: auto;
-    object-fit: cover;
+    display: block;
   }
 
-  /* ================= LIGAS (LOGOS) ================= */
+  /* ================= LIGAS ================= */
 
   .cards_container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
   }
 
   .card_logos {
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -65,14 +70,14 @@
   .size_ligue1,
   .size_brasileirao,
   .size_premierleague {
-    width: 40px;
+    width: 38px;
     height: auto;
   }
 
   /* ================= SEÇÕES ================= */
 
   .conteudo_inicio {
-    margin-top: 40px;
+    margin-top: 30px;
     text-align: center;
   }
 
@@ -81,47 +86,63 @@
   .carrousel-buttons {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    margin-bottom: 15px;
+    gap: 15px;
+    margin-bottom: 12px;
   }
 
   .arrow {
-    padding: 6px 12px;
-    font-size: 14px;
+    padding: 6px 10px;
+    font-size: 13px;
   }
 
   .carousel-wrapper {
     overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
   }
 
   .cards_camisas {
     display: flex;
     gap: 15px;
     padding-bottom: 10px;
-    scroll-snap-type: x mandatory;
   }
 
   .card_camisas {
-    flex: 0 0 90%;
+    background: #fff;
+    border-radius: 8px;
+    padding: 10px;
   }
 
-  /* ================= IMAGENS DAS CAMISAS ================= */
+  /* ================= IMAGEM DAS CAMISAS (CORRIGIDO AQUI) ================= */
 
   .camisas_cards {
-    height: 240px;
+    width: 100%;
+    height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
   }
+
+  .camisas_cards img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* MOSTRA A CAMISA INTEIRA */
+  }
+
+  /* ================= TITULO CAMISA ================= */
 
   .card_camisas h2 {
     font-size: 14px;
     line-height: 1.4;
     margin: 10px 0;
-    padding: 0 5px;
+    text-align: center;
   }
+
+  /* ================= BOTÃO ================= */
 
   .btn-instagram {
     display: block;
-    width: 90%;
+    width: 300px;
     text-align: center;
     font-size: 13px;
     padding: 8px;
@@ -131,12 +152,14 @@
   /* ================= FOOTER ================= */
 
   .footer_principal {
-    padding: 40px 20px;
+    padding: 35px 15px;
   }
 
   .footer_container {
     flex-direction: column;
-    gap: 40px;
+    gap: 35px;
+    align-items: center;
+    text-align: center;
   }
 
   .footer_secundario {
@@ -146,11 +169,11 @@
   }
 
   .logolojafooter {
-    width: 110px;
+    width: 100px;
   }
 
   .footer_description {
-    font-size: 14px;
+    font-size: 13px;
     line-height: 1.6;
   }
 
@@ -158,17 +181,17 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 30px;
+    gap: 25px;
   }
 
   .footer_li,
   .a_politica {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .social_media {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 18px;
   }
 }
